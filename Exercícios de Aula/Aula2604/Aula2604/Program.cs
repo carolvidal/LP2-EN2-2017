@@ -15,6 +15,11 @@ namespace Aula2604
             double quilometragem;
 
             n = int.Parse(Console.ReadLine());
+
+            for(int i=0; i<n; i++)
+            {
+
+            }
         }
     }
 }
