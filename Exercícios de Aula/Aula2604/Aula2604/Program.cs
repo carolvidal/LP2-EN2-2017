@@ -18,7 +18,7 @@ namespace Aula2604
 
             for(int i=0; i<n; i++)
             {
-
+                modelo = Console.ReadLine();
             }
         }
     }
