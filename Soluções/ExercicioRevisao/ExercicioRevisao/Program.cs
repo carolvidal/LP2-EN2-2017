@@ -10,7 +10,27 @@ namespace ExercicioRevisao
     {
         static void Main(string[] args)
         {
+            string nome = Console.ReadLine();
+            double quilometragem = double.Parse(Console.ReadLine());
+            int potencia = int.Parse(Console.ReadLine());
 
+            string classifRodagem, classifPot;
+
+            if (quilometragem <= 5000)
+                classifRodagem = "Novo";
+            else if(quilometragem <= 30000)
+                classifRodagem = "Seminovo";
+            else
+                classifRodagem = "Velho";
+
+            if (potencia < 120)
+                classifPot = "Popular";
+            else if (potencia <= 200)
+                classifPot = "Forte";
+            else
+                classifPot = "Potente";
+
+            Console.WriteLine("{0} - {1} - {2}", nome, classifRodagem, classifPot);
         }
     }
 }
