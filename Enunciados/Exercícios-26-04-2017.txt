@@ -1,7 +1,6 @@
-Faça um programa que leia um número inteiro N que representa a quantidade de veículos em um galpão.
-
-Para cada um dos N veículos, leia seu Modelo, sua quilometragem rodada e a potência do motor.
-Classifique os veículos de acordo com dois critérios, especificados pela tabela abaixo:
+Etapa (1)
+Faça um programa que leia o Modelo, quilometragem rodada e a potência do motor de um veículo.
+Classifique-o de acordo com dois critérios, especificados pela tabela abaixo:
 
 NOVO				SEMINOVO						VELHO
 Até 5000 km	 		mais de 5000 até 30000km		mais de 30000 km
@@ -9,6 +8,16 @@ Até 5000 km	 		mais de 5000 até 30000km		mais de 30000 km
 POTENTE				FORTE							POPULAR
 Acima de 200cv		de 120 a 200cv					menos de 120cv
 
+
+Exemplo de entrada:				Saída:
+Palio							Palio - Velho - Popular
+45252
+110
+
+
+Etapa (2) - Não use vetores nem subrotinas!
+Melhore seu programa para que ele leia um número inteiro N que representa a quantidade de veículos.
+Para cada um dos N veículos, realize a tarefa de classificação da etapa 1.
 
 Exemplo de entrada:				Saída:
 2 								Palio - Velho - Popular
@@ -20,15 +29,15 @@ Uno
 170
 
 
-(Revisão de subrotinas)
+Etapa (3) - Revisão de subrotinas
 Modifique seu programa para que ele usa uma função Classificar,
 que receberá como parâmetros os 3 dados de um veículo e retornará a string
 pronta que classifica um carro, como no exemplo de saída.
 
-(Revisão de struct)
+Etapa (4) - Revisão de struct
 Modifique essa nova versão para usar uma struct Carro. Sua função Classificar deve ser
 adaptada para, em vez de receber 3 parametros, receba apenas um, do tipo struct criado.
 Não esqueça de adaptar tbm o resto do código.
 
-(Revisão de vetores)
+Etapa (5) - Revisão de vetores
 Modifique esta última versão para primeiro ler todos os dados e depois imprimir todas as classificações dos carros.
