@@ -21,7 +21,7 @@ Para cada um dos N veículos, realize a tarefa de classificação da etapa 1.
 
 Exemplo de entrada:				Saída:
 2 								Palio - Velho - Popular
-Palio							Uno - Seminovo - Forte
+Palio							Uno - Novo - Forte
 45252
 110
 Uno
