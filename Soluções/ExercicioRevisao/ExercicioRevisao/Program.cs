@@ -8,7 +8,7 @@ namespace ExercicioRevisao
 {
     class Program
     {
-        struct Carro
+        public struct Carro
         {
             public string Modelo;
             public double Quilometragem;
@@ -18,35 +18,17 @@ namespace ExercicioRevisao
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            Carro carro;
+            Carro[] carros = new Carro[n];
 
             for (int i = 0; i < n; i++)
             {
-                carro.Modelo = Console.ReadLine(); //Palio
-                carro.Quilometragem = double.Parse(Console.ReadLine()); //20000
-                carro.Potencia = int.Parse(Console.ReadLine()); // 300
-
-                Console.WriteLine(Classificar(carro));
-                                          //"Palio"    20000          300 
+                carros[i].Modelo = Console.ReadLine(); //Palio
+                carros[i].Quilometragem = double.Parse(Console.ReadLine()); //20000
+                carros[i].Potencia = int.Parse(Console.ReadLine()); // 300
             }
 
-            string s = "Francisco";
-            char c = s[5];
-            
-            char sexo = Console.ReadLine().ToUpper()[0];
-            switch(sexo)
-            {
-                case 'M': { s = "Masculino"; break; }
-                case 'F': { s = "Feminino"; break; }
-                default: throw new Exception(); 
-            }
-
-            if (sexo == 'M')
-                s = "Masculino";
-            else if (sexo == 'F')
-                s = "Feminino";
-            else
-                throw new Exception(); 
+            for(int i=0; i < n; i++)
+                Console.WriteLine(Classificar(carros[i]));
         }
 
         public static string Classificar(Carro c)
