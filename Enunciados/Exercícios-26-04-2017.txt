@@ -1,4 +1,4 @@
-Etapa (1)
+﻿Etapa (1)
 Faça um programa que leia o Modelo, quilometragem rodada e a potência do motor de um veículo.
 Classifique-o de acordo com dois critérios, especificados pela tabela abaixo:
 
@@ -30,9 +30,9 @@ Uno
 
 
 Etapa (3) - Revisão de subrotinas
-Modifique seu programa para que ele usa uma função Classificar,
+Modifique seu programa para que ele use uma função Classificar,
 que receberá como parâmetros os 3 dados de um veículo e retornará a string
-pronta que classifica um carro, como no exemplo de saída.
+pronta que classifica um carro, como no exemplo de saída das etapas anteriores.
 
 Etapa (4) - Revisão de struct
 Modifique essa nova versão para usar uma struct Carro. Sua função Classificar deve ser
