@@ -1,0 +1,16 @@
+Dia do ano
+
+Faça um programa que leia um dia e um mês no formato mostrado nos exemplos de entrada
+e que diga qual é o número ordinal correspondente àquele dia.
+
+Obs1: Ignore anos bissextos.
+Obs2: O nome do mês NEM SEMPRE será fornecido com a primeira letra maiúscula
+
+Exemplos de entrada:
+14 de Julho
+2 de Setembro
+
+Exemplos de saída correspondentes:
+195º dia do ano.
+245º dia do ano.
+

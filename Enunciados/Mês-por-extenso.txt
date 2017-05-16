@@ -1,0 +1,15 @@
+Datas por extenso:
+
+Faça um programa que leia uma data digitada pelo usuário no seguinte formato:
+
+DD/MM/AAAA
+(Assuma que o usuário sempre digitará uma data válida no formato correto)
+
+e que imprima uma versão desta data com o mês escrito por extenso.
+Veja o exemplo abaixo:
+
+Entrada:
+27/05/2007
+
+Saída:
+27 de maio de 2007

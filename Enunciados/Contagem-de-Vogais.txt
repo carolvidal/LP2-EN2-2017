@@ -1,0 +1,13 @@
+Contagem de Vogais
+
+Faça um programa que leia um texto arbitrariamente grande digitado pelo usuário e calcule a quantidade de 
+vogais nesse texto.
+
+Lembre-se: de que no texto pode haver letras maiúsculas e minúsculas!
+
+
+Exemplo:
+O Rato roeu a roupa do rei de RoMA
+
+Saída:
+16

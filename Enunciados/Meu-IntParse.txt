@@ -1,0 +1,34 @@
+MeuIntParse
+
+Infelizmente por um erro da Microsoft, a subrotina int.Parse() nao está
+mais disponível para ser usada em seus programas. Você tinha um programa
+que era responsável por ler um número inteiro e imprimir o valor lido 
+multiplicado por 2.
+
+Veja seu antigo código abaixo: 
+
+public static void Main(string[] args)
+{
+	Console.WriteLine(2 * int.Parse(Console.ReadLine()));
+}
+
+Esse programa é vital para que sua empresa continue funcionando (por 
+incrível que pareça) e você não pode esperar que a Microsoft corrija
+esse erro imperdoável.
+
+Um outro colega programador começou a criar a subrotina e pediu a sua 
+ajuda para terminá-la. Complete o código abaixo SEM ALTERÁ-LO para que
+tudo volte à normalidade e você volte a faturar seus milhões.
+
+public static void Main(string[] args)
+{
+	Console.WriteLine(2 * MeuIntParse(Console.ReadLine()));
+}
+
+public static ________ MeuIntParse(string nroComoStr)
+{
+	.
+	.
+	.
+}
+
