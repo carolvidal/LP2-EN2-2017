@@ -13,25 +13,10 @@ namespace ExercicioRevisao
             public string Modelo;
             public double Quilometragem;
             public int Potencia;
+            public int AnoFabricacao;
         }
 
-        static void Main(string[] args)
-        {
-            int n = int.Parse(Console.ReadLine());
-            Carro[] carros = new Carro[n];
-
-            for (int i = 0; i < n; i++)
-            {
-                carros[i].Modelo = Console.ReadLine(); //Palio
-                carros[i].Quilometragem = double.Parse(Console.ReadLine()); //20000
-                carros[i].Potencia = int.Parse(Console.ReadLine()); // 300
-            }
-
-            for(int i=0; i < n; i++)
-                Console.WriteLine(Classificar(carros[i]));
-        }
-
-        public static string Classificar(Carro c)
+        public static string Classificar(ref Carro c)
         {
             string classifRodagem, classifPot;
 
@@ -52,5 +37,33 @@ namespace ExercicioRevisao
             return String.Format("{0} - {1} - {2}", c.Modelo, classifRodagem, classifPot);
         }
 
+        public static void AtualizarKmCarro(ref Carro c, double novoKm)
+        {
+            c.Quilometragem = novoKm;
+        }
+
+        public static double TaxaDeUsoCarro(ref Carro c)
+        {
+            return c.Quilometragem / (DateTime.Now.Year - c.AnoFabricacao);
+        }
+
+
+
+
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            Carro[] carros = new Carro[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                carros[i].Modelo = Console.ReadLine();
+                carros[i].Quilometragem = double.Parse(Console.ReadLine());
+                carros[i].Potencia = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < n; i++)
+                Console.WriteLine(Classificar(ref carros[i]));
+        }
     }
 }
