@@ -1,0 +1,23 @@
+Movimentar objetos em um plano 2D
+
+Vamos imaginar que queremos desenhar um objeto na tela e fazer ele se movimentar (em principio apenas para a direita) de acordo com um comando dado pelo usuário.
+
+Um objeto, para existir em um plano 2D, precisa de 2 coordenadas, que chamaremos X e Y. Em nossa representação, em um plano de altura H e largura W, o posicionamento será representado da seguinte forma:
+
+(0,0) origem
+   ----------------------------------
+  |                        |         |
+  |                        | Y       |
+  |                        |         |
+  |----------------------- o         |
+  |             X                    |
+  |                                  |
+  |                                  |
+  |                                  |
+   ----------------------------------  (L,W)
+
+
+Na pasta "Soluções" deste repositório, você encontrará uma solution chamada "ObjetosNoPlano", que contém, por enquanto, um programa na Main
+que foi escrito fingindo que existe uma classe Objeto2D a partir da qual poderemos criar objetos desse tipo. Sua tarefa é criar essa classe para que a solution funcione corretamente de acordo com a descrição de como são os dados de entrada e da saída resultante, mostrados a seguir.
+
+<Completar>
