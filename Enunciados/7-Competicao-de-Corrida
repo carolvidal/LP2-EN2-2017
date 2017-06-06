@@ -1,0 +1,54 @@
+************************************************************************************
+*                                                                                  *
+*                               COMPETIÇÃO DE CORRIDA                              *
+*                                                                                  *
+************************************************************************************
+
+O CPII vai organizar uma competição de corrida, em várias provas de 100m rasos.
+Cada competidor correrá 3 vezes, e poderá descartar seu pior tempo. A soma dos 
+outros dois tempos dará o tempo oficial do competidor, e o competidor com o menor 
+tempo oficial será o campeão.
+
+Tarefa: Dadas as informações sobre os competidores (nome e tempos), determine quem é 
+o campeão da competição.
+
+
+Exemplo de entrada:
+5
+João
+Pedro
+José
+Maria
+Roberta
+10.1
+11.3
+10.9
+9.9
+12.3
+11.1
+11.5
+10.9
+10.4
+11.1
+10.7
+10.3
+11.2
+10.1
+9.8
+
+Exemplo de saída:
+Maria
+
+
+=======================================================================================
+
+Instruções:
+
+- Identifique qual a entidade principal do programa que está explícita no enunciado, 
+seus atributos e métodos. CUIDADO: Algumas características não são atributos, pois pre-
+cisam ser calculadas A PARTIR DOS atributos.
+
+- Crie a classe com esses atributos e método(s)
+- Programe o método para que ele possa responder a informação a que se propõe.
+-Crie o programa principal, fazendo uso de objetos da classe criada e usando seus métodos 
+para simplificar sua solução.
