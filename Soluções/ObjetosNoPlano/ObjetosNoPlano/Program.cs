@@ -10,8 +10,6 @@ namespace ObjetosNoPlano
     {
         static void Main(string[] args)
         {
-            int A = 600, L = 800;
-
             Console.Write("Digite X inicial: ");
             int x = int.Parse(Console.ReadLine());
 
@@ -21,20 +19,27 @@ namespace ObjetosNoPlano
             /* O tipo Objeto2D não existirá até que você crie uma nova 
              * classe para representá-lo em seu projeto!*/
             Objeto2D obj = new Objeto2D();
-            /* COMPLETAR: Inicialização da posição do objeto */
+            
+            /* Inicialização da posição do objeto */
+            obj.X = x;
+            obj.Y = y;
 
             Console.Write("Digite comando: ");
             ConsoleKey comando = Console.ReadKey().Key;
 
-            if (comando == ConsoleKey.RightArrow)
+            /* O while abaixo só funcionará corretamente caso a 
+             * classe Objeto2D tenha sido construida de forma adequada, 
+             * ou seja, que saiba realizar as tarefas de andar para a direita 
+             * e de retornar uma string exibindo suas coordenadas */
+            while (comando != ConsoleKey.Escape)
             {
-                /* As duas linhas abaixo só funcionarão corretamente caso a 
-                 * classe Objeto2D tenha sido construida de forma adequada, 
-                 * ou seja, que saiba realizar as tarefas de andar para a direita 
-                 * e de retornar uma string exibindo suas coordenadas */
+                if (comando == ConsoleKey.RightArrow)
+                    obj.MoverParaDireita();
 
-                obj.AndarParaADireita();
                 Console.WriteLine(obj.Coordenadas());
+
+                Console.Write("Digite comando: ");
+                comando = Console.ReadKey().Key;
             }
         }
     }
