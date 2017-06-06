@@ -1,8 +1,15 @@
-Movimentar objetos em um plano 2D
+***********************************************************************************************
+*                         Movimentar objetos em um plano 2D (Parte 1)                         *
+***********************************************************************************************
+Lembre-se: Todo este enunciado gera apenas uma solution, que vai evoluir com o tempo
 
-Vamos imaginar que queremos desenhar um objeto na tela e fazer ele se movimentar (em principio apenas para a direita) de acordo com um comando dado pelo usuário.
 
-Um objeto, para existir em um plano 2D, precisa de 2 coordenadas, que chamaremos X e Y. Em nossa representação, em um plano de altura H e largura W, o posicionamento será representado da seguinte forma:
+Vamos imaginar que queremos desenhar um objeto na tela e fazer ele se movimentar (em principio
+apenas para a direita) de acordo com um comando dado pelo usuário.
+
+Um objeto, para existir em um plano 2D, precisa de 2 coordenadas, que chamaremos X e Y. Em nossa
+representação, em um plano de altura H e largura W, o posicionamento será representado da
+seguinte forma:
 
 (0,0) origem
    ----------------------------------
@@ -17,7 +24,109 @@ Um objeto, para existir em um plano 2D, precisa de 2 coordenadas, que chamaremos
    ----------------------------------  (L,W)
 
 
-Na pasta "Soluções" deste repositório, você encontrará uma solution chamada "ObjetosNoPlano", que contém, por enquanto, um programa na Main
-que foi escrito fingindo que existe uma classe Objeto2D a partir da qual poderemos criar objetos desse tipo. Sua tarefa é criar essa classe para que a solution funcione corretamente de acordo com a descrição de como são os dados de entrada e da saída resultante, mostrados a seguir.
+Na pasta "Soluções" deste repositório, você encontrará uma solution chamada "ObjetosNoPlano", que
+contém, por enquanto, um programa na Main que foi escrito fingindo que existe uma classe Objeto2D
+a partir da qual poderemos criar objetos desse tipo.
 
-<Completar>
+Sua tarefa é criar essa classe para que a solution funcione corretamente de acordo com a
+descrição de como são os dados de entrada e da saída resultante, mostrados a seguir. Primeiro
+o usuário deverá fornecer a posição inicial do objeto para que, posteriormente, receba comandos
+para movimentar o objeto para a direita. A cada novo comendo, por enquanto, deve ser exibida na
+tela a nova posição do objeto.
+
+Note que não faremos nada acontecer "visualmente" na tela. nesse momento, queremos ter um objeto em
+nosso programa, com as informações necessárias sempre atualizadas, que possa ser usado
+posteriormente para, de fato, desenhar algo na tela.
+
+Gere pelo menos um commit com a versão final desta primeira parte.
+
+
+Exemplo de Entrada:
+-------------------------------------------------------------------------
+125    // --> X inicial
+378    // --> Y inicial
+{→}    // Representa que o usuário apertou a seta da direita no teclado
+{→}
+{→}
+{→}
+{→}
+{→}
+{ESC}
+
+Exemplo de Saída:
+-------------------------------------------------------------------------
+(126,378)
+(127,378)
+(128,378)
+(129,378)
+(130,378)
+(131,378)
+
+***********************************************************************************************
+*                         Movimentar objetos em um plano 2D (Parte 2)                         *
+***********************************************************************************************
+
+Agora que a sua classe já está organizada corretamente para realizar o movimento para a direita,
+altere sua solução, aumentando as funcionalidades da classe, para que um objeto criado a partir
+dela possa se movimentar nas quatro direções.
+
+Como sabemos, alterar as capacidades da classe não faz nada de fato acontecer em nosso programa.
+O código que captura uma tecla digitada pelo usuário e chama o método de movimentação do objeto
+encontra-se na Main, de forma que é necessário que você altere também a Main para que você possa
+ver o seu código funcionar. Ela deverá ser capaz de detectar não só a tecla da direita, mas
+também das demais direções e chamar os métodos adequados de movimentação.
+
+Gere pelo menos um novo commit no seu repositório para esta segunda parte.
+
+
+Exemplo de Entrada:
+-------------------------------------------------------------------------
+125
+378
+{→}
+{→}
+{←}
+{↑}
+{↑}
+{→}
+{↓}
+{→}
+{ESC}
+
+Exemplo de Saída:
+-------------------------------------------------------------------------
+(126,378)
+(127,378)
+(126,378)
+(126,379)
+(126,380)
+(127,380)
+(127,379)
+(128,379)
+
+
+***********************************************************************************************
+*                         Movimentar objetos em um plano 2D (Parte 3)                         *
+***********************************************************************************************
+
+Embora ainda estejamos trabalhando em uma Console Application, nosso objeto terá uma aparência
+quando desenhado na tela. Mas para simplificarmos, por enquanto, vamos trabalhar apenas com
+círculos. Nosso projeto precisa, então ser adaptado.
+
+CADA UMA DAS ETAPAS DESSA PARTE DEVERÁ GERAR PELO MENOS UM COMMIT NO SEU REPOSITÓRIO.
+
+1) Renomeie sua classe Objeto2D para Circulo.
+Você não deve fazer isso manualmente! O Visual Studio fará isso pra você, trocando o nome em
+todos os locais do código onde for necessário. Para isso:
+    - Vá ao Solution Explorer (janela onde vemos todos os arquivos da Solution)
+    - Clique com o botão direito do mouse sobre o arquivo da classe (neste exemplo: Objeto2D.cs)
+    - "Renomear"
+    - Preencha com o novo nome.
+
+2) Todo circulo agora deverá ter, além da sua posição (X,Y) um raio. Altere sua classe para que
+seus objetos sejam capazes de armazenar essa informação. Na Main, além da posição inicial do
+(a partir de agora) círculo, o usuário deve fornecer o tamanho do raio, em pixels.
+
+3) Todo círculo agora deverá ter agora, além dos seus atributos atuais, uma cor. Lembre-se de como
+uma cor é representada no computador (RGB) e bole uma estratégia para armazenar essa informação.
+Não é preciso alterar a Main nesse caso.
