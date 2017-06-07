@@ -1,4 +1,4 @@
-************************************************************************************
+﻿************************************************************************************
 *                                                                                  *
 *                               COMPETIÇÃO DE CORRIDA                              *
 *                                                                                  *
@@ -11,6 +11,13 @@ tempo oficial será o campeão.
 
 Tarefa: Dadas as informações sobre os competidores (nome e tempos), determine quem é 
 o campeão da competição.
+
+Os dados de entrada serão dados na seguinte ordem:
+- Número de competidores
+- Seus Nomes
+- Tempo da 1ª etapa de cada competidor, na ordem dos nomes.
+- Tempo da 2ª etapa de cada competidor, na ordem dos nomes.
+- Tempo da 3ª etapa de cada competidor, na ordem dos nomes.
 
 
 Exemplo de entrada:
