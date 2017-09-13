@@ -1,0 +1,36 @@
+Código Morse
+
+Faça um programa O.O. capaz de codificar, decodificar e transmitir mensagens em Código Morse.
+
+Seu programa deve ser uma Console application. Ele deve fornecer um menu com as seguintes opções(e só deve ser encerrado quando a opção associada for escolhida):
+
+=========
+Conversão de mensagens
+
+1 - Codificar
+2 - Decodificar
+3 - Transmitir
+0 - Sair
+
+Opção: 
+=========
+
+1) Codificar: Transformar uma mensagem somente em caracteres alfabéticos e espaços(todos em maiúsculas e sem acentos) em código morse. As letras em código morse dever estar separadas por 1 espaço e as palavras por 3 espaços.
+
+Ex: OVO CASA
+--- ...- ---    -.-. .- ... .-
+
+2) Decodificar: Fazer a operação rigorosamente inversa. A mensagem em Morse deve ser dada no mesmo padrão que a opção codificar gera, e gerar uma mensagem no padrão usado como entrada pela opção de codificação.
+
+Ex: --- ...- ---    -.-. .- ... .-
+OVO CASA
+
+3) (EXTRA) Transmitir: Receber uma mensagem no mesmo padrão da opção 1 (Texto normal), exibir a mensagem codificada e transmitir através de sons com o Console.Beep().
+
+Ex: OVO CASA
+--- ...- ---    -.-. .- ... .-
+Transmitindo..... << Neste momento os sons estarão tocando >>
+
+====================
+
+Para realizar esta tarefa, você deve usar uma classe Mensagem, com atributos e métodos adequados. Você deve guardar a tabela de conversão (que não deve ser acessível), o texto da mensagem, e permitir que os objetos dessa classe realizem as operaçoes de conversão.
