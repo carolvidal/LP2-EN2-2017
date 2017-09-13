@@ -1,0 +1,19 @@
+Produtos:
+
+Faça um programa O.O. para gerenciar os produtos de uma loja.
+Cada produto possui Id, Nome, Preço, Marca e quantidade em estoque.
+
+--> Instruçoes:
+
+1) Os atributos Id, Nome e quantidade devem ser somente-leitura.
+2) Todo produto deve ser criado já com id, nome e preço, além de
+   ter quantidade em estoque igual a zero.
+3) Todo produto deve saber gerenciar as operações de reposição de
+   estoque e retirada de estoque. Uma retirada não pode exceder a quantidade em estoque atual. (Extra) Se houver tal tentativa, o programa deve lançar uma exceção.
+4) (Extra) Crie um método Imprimir, para "apresentar" 
+   adequadamente um produto no console no segunte formato:
+
+   Produto <Nº>: <Nome> - R$ <Preço c/ 2 casas decimais> - Estoque: <Qtd>
+
+Escreva um programa para usar a sua classe e criar alguns produtos, exibir informações, realizar operações de retirada e reposição, etc.
+
