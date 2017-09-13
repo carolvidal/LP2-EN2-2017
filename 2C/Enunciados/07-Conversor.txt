@@ -1,0 +1,30 @@
+Conversor de Medidas:
+
+Crie uma classe que permita a conversão entre diferentes tipos de medidas, como mostrado a seguir:
+
+Massa:
+Kg <--> g
+Kg <--> T
+Kg <--> Lbs
+
+Temperatura:
+°₢ <--> °F
+°F <--> °K
+°K <--> °C
+
+Distância:
+m <--> Km
+Km <--> Milha
+m <--> pés
+m <--> pol.
+pol. <--> pés 
+
+
+Exemplos de uso da Classe:
+
+Conversor.LbParaKg(.....)
+Conversor.CParaF(.....)
+Conversor.MParaPes(.....)
+
+No programa principal, crie um menu interativo onde o usuário possa realizar algumas das conversões implementadas (min. de 6)
+

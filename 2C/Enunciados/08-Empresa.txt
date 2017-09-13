@@ -1,0 +1,28 @@
+Empresa:
+
+Você foi contratado para criar uma aplicação O.O. que irá gerenciar todos os funcionários de uma empresa. Todo funcionário tem, dentro da empresa, um número de registro, nome, CPF, e-mail e salário.
+
+Para realizar a tarefa, você recebeu um documento que explica melhor que são esses funcionários, seus cargos e a hierarquia da empresa:
+
+--> Gerente: É o responsável por um Setor. Além disso, ganha um bônus no salário, que é uma porcentagem que varia para cada gerente na empresa.
+
+--> Empregado: É um funcionário padrão da empresa. Todo empregado está sempre vinculado a um gerente. Para melhor controle, é necessário saber a data de entrada dos Empregados na empresa .
+
+--> Terceirizado: Também é vinculado a um gerente e tem sua data de entrada mantida pelo sistema. Os terceirizados precisam tem o nome da sua empresa matriz registrado para emissão de crachás especiais.
+
+Tarefas:
+
+Etapa 1) Crie as classes necessárias para modelar as entidades envolvidas na resolução deste problema.
+  - Todas as classes criadas devem realizar o encapsulamento corretamente.
+  - Todas as classes devem fazer a validação de pelo menos um atributos através de roperties e encapsulemento automático dos demais.
+  - Todas as classes devem ter pelo menos um construtor não-padrão.
+
+Commite seu resultado (Não utilize herança.)
+
+Etapa 2) Com seus conhecimentos sobre herança, simplifique seu código.
+
+Commite seu resultado.
+
+Etapa 3) Implemente herança em seus métodos construtores para delegar a inicialização dos atributos pertinentes à classe mãe.
+
+Commite seu resultado.
